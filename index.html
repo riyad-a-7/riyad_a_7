@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git site</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  >
+    <title>Pico.css</title>
 </head>
 <body>
-    
+<script></script>
+    <header>
+        <nav class="container-fluid">
+           
+                <ul>
+                    <li><b><a href="index.html" id="basliq">FrontEnd</a></b></li>
+                
+                </ul>
+            <ul>
+                <li><a href="html.html" target="blank">Html</a></li>
+                <li><a href="style.html" target="blank">Css</a></li>
+                <li><a href="js.html" target="blank">js</a></li>
+                <li><a href="react.html" target="blank">react</a></li>
+                <li><a href="contact.html" type="button">Contact</a></li>
+                <li><a href="#son" role="button">seh sonuna get</a></li>
+            </ul>
+        
+        </nav>
+    </header>
+    <main class="container">
+        <blockquote>
+         Frontend herseyin baslangicidir
+          <footer>
+            <em>-Riyad Abdullayev</em> 
+          </footer>
+        </blockquote>
+        <br><br><br>
+       
+        <h1>Ziyaretçi Sayısı: <span id="visitor-count">0</span></h1>
+        <script>
+            window.onload = function() {
+                if (localStorage.getItem('visitorCount')) {
+                    var count = parseInt(localStorage.getItem('visitorCount'), 10);
+                    count++;
+                    localStorage.setItem('visitorCount', count);
+                } else {
+                    localStorage.setItem('visitorCount', 1);
+                }
+                document.getElementById('visitor-count').innerText = localStorage.getItem('visitorCount');
+            };
+        </script>
+
+
+
+        <article>
+            <h3>Lorem, ipsum dolor.</h3>
+            <img src="https://picsum.photos/id/811/1200/600?grayscale&blur=2" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, autem nemo.</p>
+            </img>
+        </article>
+        <article>
+            <h3>Obcaecati, exercitationem neque.</h3>
+            <img src="https://picsum.photos/id/818/1200/600?grayscale&blur=2" alt="">
+                <p>Adipisci eos velit ipsa quae laudantium pariatur saepe nobis numquam ducimus!</p>
+            </img>
+        </article>
+        <article>
+            <h3>Non, architecto laboriosam?</h3>
+            <img src="https://picsum.photos/id/813/1200/600?grayscale&blur=2" alt="">
+                <p>Soluta aspernatur, officiis sequi neque necessitatibus odio vero possimus laudantium nobis.</p>
+            </img>
+        </article>
+        <article>
+            <h3>Laudantium, modi ex.</h3>
+            <img src="https://picsum.photos/id/814/1200/600?grayscale&blur=2" alt="">
+                <p>Nesciunt perferendis repellat inventore fugiat cumque repellendus mollitia exercitationem enim officiis!</p>
+            </img>
+        </article>
+        <article>
+            <h3>Illo, molestias nisi.</h3>
+            <img src="https://picsum.photos/id/815/1200/600?grayscale&blur=2" alt="">
+                <p>Voluptatum, nemo obcaecati ea enim adipisci ut quisquam nulla cupiditate earum?</p>
+            </img>
+        </article>
+        <article>
+            <h3>Blanditiis, quam maxime.</h3>
+            <img src="https://picsum.photos/id/816/1200/600?grayscale&blur=2" alt="">
+                <p>Autem excepturi repellendus odio maxime placeat quo earum possimus soluta perferendis.</p>
+            </img>
+        </article>
+        <article>
+            <h3>Nobis, saepe recusandae.</h3>
+            <img src="https://picsum.photos/id/817/1200/600?grayscale&blur=2" alt="">
+                <p>Aliquam delectus facere nobis ab inventore voluptas porro itaque placeat temporibus.</p>
+            </img>
+        </article>
+        </main>
+        <footer>
+            <article>
+                <h5>Haqqimizda.</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptas labore cupiditate provident obcaecati, alias nulla recusandae veniam accusamus incidunt ipsa exercitationem fuga. Fugiat necessitatibus, delectus libero eaque et sunt illo! Expedita earum odio magni, nulla sit alias voluptatum maxime nam maiores. Maxime voluptatum numquam iure autem quaerat aliquam, nihil officia! Et quis ipsam repudiandae hic voluptatum, consectetur vero reprehenderit laborum asperiores temporibus explicabo nostrum non molestiae debitis molestias harum qui, adipisci cumque recusandae vel rem magnam. Porro tempore, quaerat et cupiditate quae reprehenderit aperiam incidunt reiciendis ducimus tempora fuga blanditiis sunt dolores dolorem illum nulla facere earum suscipit nostrum.</p>
+                <h6>
+                    <ul>
+                        <li><a href="html.html">Html haqqinda</a></li>
+                        <li><a href="style.html">Css haqqinda</a></li>
+                        <li><a href="js.html">Js haqqinda</a></li>
+                        <li><a href="react.html">React haqqinda</a></li>
+                        <li><a href="contact.html">Bizimle elaqe</a></li>
+                    </ul>
+                </h6>
+                <div align="right"><h6 ><a href="#basliq" id="son" role="button" >Evvele qayit ...</a></h6></div>
+            </article>
+        </footer>
 </body>
 </html>
